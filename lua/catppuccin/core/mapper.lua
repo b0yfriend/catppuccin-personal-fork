@@ -31,8 +31,8 @@ local function get_base()
 		CursorLine = { bg = cp.black3 }, -- Screen-line at the cursor, when 'cursorline' is secp.  Low-priority if foreground (ctermfg OR guifg) is not secp.
 		Directory = { fg = cp.blue }, -- directory names (and other special names in listings)
 		EndOfBuffer = { fg = cp.black2 }, -- filler lines (~) after the end of the buffer.  By default, this is highlighted like |hl-NonText|.
-		ErrorMsg = { fg = cp.red, style = "bold,italic" }, -- error messages on the command line
-		VertSplit = { fg = cp.black0 }, -- the column separating vertically split windows
+		ErrorMsg = { fg = cp.red, style = "bold" }, -- error messages on the command line
+		VertSplit = { fg = cp.black4 }, -- the column separating vertically split windows
 		Folded = { fg = cp.blue, bg = cp.black4 }, -- line used for closed folds
 		FoldColumn = { bg = cp.black2, fg = cp.gray0 }, -- 'foldcolumn'
 		SignColumn = { bg = cnf.transparent_background and cp.none or cp.black2, fg = cp.black4 }, -- column where |signs| are displayed
@@ -118,7 +118,7 @@ local function get_base()
 
 		Underlined = { style = "underline" }, -- (preferred) text that stands out, HTML links
 		Bold = { style = "bold" },
-		Italic = { style = "italic" },
+		-- Italic = { style = "italic" },
 		-- ("Ignore", below, may be invisible...)
 		-- Ignore = { }, -- (preferred) left blank, hidden  |hl-Ignore|
 
