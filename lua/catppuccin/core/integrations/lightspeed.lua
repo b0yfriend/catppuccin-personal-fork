@@ -32,7 +32,7 @@ function M.get(cp)
 		LightspeedOverlapped = {bg = cp.black4, fg = cp.white},
 		LightspeedLabelDistant = {bg = cp.mauve, fg = cp.white},
 		LightspeedLabelDistantOverlapped = {bg = cp.mauve, fg = cp.white},
-		LightspeedShortcut = {bg = cp.black2, fg = cp.peach, style = "italic"},
+		LightspeedShortcut = {bg = cp.black2, fg = cp.peach},
 		LightspeedShortcutOverlapped = {bg = cp.black2, fg = cp.peach, style = "bold"},
 		LightspeedMaskedChar = {bg = cp.black2, fg = cp.red, style = "undercurl"},
 		LightspeedGreyWash = {bg = cp.black2, fg = cp.gray0},
